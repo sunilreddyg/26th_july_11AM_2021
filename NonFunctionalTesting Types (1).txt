@@ -1,18 +1,23 @@
 Non-Functional Testing:-->
 
+	=> Non functional testing types verify how system
+		performs. Inorder to run functional behaviour
+		of software.
+
 	=> Tester involve in non-functional testing using NFRS document
 		[Non functional required specification document].
 
 	=> After completed functional testing  testers involve in non functional
 		testing
 
-	=> Organization recriut separate non functional testing team or  train
-		functional engineers inorder to condcut non functional testings
+	=> Organization recriut separate non functional testing team or  provide traing
+		for functional engineers inorder to condcut non functional testings
 
 1.Usability Testing:-->
 	During this test tester verify user friendlyness of software
 
-	Note:--> Tester verify software userfriendlyness using below checklist
+	Note:--> Tester verify software userfriendlyness using 
+		below checklist
 
 	1.Verify spelling in all screens of software
 	2.Verify labels in it all screens of software
@@ -36,12 +41,13 @@ Non-Functional Testing:-->
 	with in client expected browsers and operating systems.
 
 	=> Other name of compatibility testing is cross browser testing or cross platform testing
-		[In real time organizations use selenium kind of automation tools to conduct cross -
-			browser automation]	
+		[In real time organizations use selenium kind of automation tools to conduct 
+		cross -browser automation]	
 ======================================================================
 3.Performance testing
 	=> Performance is non functional testing 
-	=> Performance testing only possible using automation tool like [LoadRunner, Jmeter]
+	=> Performance testing only possible using automation tool like 
+		[LoadRunner, Jmeter,Web load, Load ninza --etc]
 	=> During this test performance testing engineers verify software speed  and response
 		under customer expected configuration
 	=> Performance testing can't conduct at over UI [From the front pages]
@@ -177,7 +183,8 @@ Authorization:-->
 
 Authentication:-->
 		=> Who you are?
-		=> authorized access  is granted to protect data and unauthorized access is restricted
+		=> authorized access  is granted to protect data and 
+		unauthorized access is restricted
 
 		Example:-->
 			Login authentication:--> Only valid user can access software and features of it.
@@ -188,7 +195,7 @@ Authentication:-->
 dataprotection:-->
 		=> Also we can call as encryption and decryption testing
 		=> Dataprotection testing can be done over userinterface and database.
-		=> In userinterface testing team verify all account passwords are restricting user to watch.
+		=> In userinterface testing team verify all account passwords are restricting user to watch/copy.
 
 		How data protection tested in database:-->
 			=> Testers send queries to read password of user and verify data is saved in encrypted
@@ -201,7 +208,7 @@ SqlInjection:-->
 		=> Mostly test conduct at input fields like [Editbox, Listbox ---etc]
 
 		Example:-->
-			=> Bank employess restricted to transfter ammount upto 20000.Then employee
+			=> Bank employees restricted to transfter ammount upto 20000.Then employee
 				is trying to increase range by sending malicious script.
 
 Security Testcases:-->
