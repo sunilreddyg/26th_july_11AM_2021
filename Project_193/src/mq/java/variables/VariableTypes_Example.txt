@@ -1,0 +1,86 @@
+Instant Variable:-->
+	=> These variables define inside class body and outSide method.
+	=> Outside a class instant varaible to use we should create object for class
+	
+
+
+  public class  Variables
+  {
+	int a=100;
+	String name="Ajay";
+
+	void method1()
+	{
+		System.out.println("Global variable->"+a);
+		System.out.println("Global variable->"+name);
+	}
+
+	void method2()
+	{
+		System.out.println("Global variable->"+a);
+		System.out.println("Global variable->"+name);
+	}
+
+	static void method3()
+	{
+		//Only static variables allowd to call without object creation
+		System.out.println(new Variables().a);
+		System.out.println(new Variables().name);
+	}
+
+   }
+
+	=> Calling Instant Methods From different class
+	public class Use_variables
+	{
+
+		void method4()
+		{
+			//instant variable to use ouside class we should create object
+			System.out.println(new Variables().a);
+		}
+
+	}
+===============================================================================>>>>
+Class Variables:-->
+	=> class variables also called as static variables
+	=> These variables define with static specifier
+	=> with in class static variables can be used in
+			 both static and non static methods
+	=> Outside class static methods to call  we should use Classname
+			Classname.Variablename;
+
+	public class Variables
+	{
+		static int a=100;
+		static String name="mq";
+		
+		static void method1()
+		{
+			System.out.println("class variable"+a);
+			System.out.println("class variable"+name);
+		}
+
+		void method2()
+		{
+			=> static variable can be used in non static methods without object creation
+			System.out.println("class variable"+a);
+			System.out.println("class variable"+name);
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
