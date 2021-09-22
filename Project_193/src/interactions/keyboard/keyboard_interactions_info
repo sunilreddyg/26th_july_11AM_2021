@@ -1,0 +1,41 @@
+Keyboard Interaction commands:-->
+		
+			Sendkeys
+			Keydown
+			Keyup
+			
+			
+			Sendkeys:-->
+					Method allow characters to type at input textbox and also
+					support keyboard actions to perform on any selected target..
+					
+					
+			Syntax:--> [Direct keyboard action on active Element]
+					new Actions(driver).Sendkeys(Keys.TAB).perform();
+					
+			Syntax:--> [Keyboard action on selected location]
+					WebElement Element=driver.findElement(By.id("X"));
+					new Actions(driver).Sendkeys(Element,"Charecters").perform();
+					new Actions(driver).Sendkeys(Element,Keys.TAB).perform();
+					
+					
+				Group of keybord interactions:-->
+				
+						Actions action=new Actions(driver);
+						action.Sendkeys(keys.TAB).pause(2000)
+						.Sendkeys(Keys.TAB).perform(); 
+==========================================================================>>
+	KeyDown:-->
+			 Method usefull to Hold down Keyword Keys
+			 
+			 Syntax:-->   [Hold Downl Control Key]					
+				new Actions(driver).KeyDown(Keys.CONTROL).perform();
+				
+	KeyUp:-->
+			Method usefull to Release Down Keys
+				Syntax:-->   [Hold Downl Control Key]					
+				new Actions(driver).KeyUp(Keys.CONTROL).perform();
+===========================================================================>>						
+						
+						
+						
