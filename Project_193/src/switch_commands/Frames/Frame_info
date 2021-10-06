@@ -19,7 +19,7 @@ How to identify frame at Webpage:-->
 							separate xpath.
 							
 			=> During recording time selenium IDE identify frame
-				and genarate script hanlde frame
+				and genarate script to handle frame
 	
 ----------Html source for frame elements------------------>
 <html>
@@ -100,7 +100,6 @@ How to Switch one frame to another frame
 
 	3. Apply switch to Second Frame
 		driver.switchTo().frame(String framename);
-
 ---------------------------------------------------------------------------->
 How to Switch to parent frame:---->
 	under parent frame switch required between two sub frames. To get
@@ -119,3 +118,13 @@ Frame Syntax:-->
 		driver.switchTo().frame(5);
 ================================================================>>
 Note:--> selenium ide can record frame actions.
+
+
+
+
+
+
+
+
+
+

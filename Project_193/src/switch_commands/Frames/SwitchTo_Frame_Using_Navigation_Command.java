@@ -5,10 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class SwitchTo_Frame 
+public class SwitchTo_Frame_Using_Navigation_Command 
 {
-	
-	public static void main(String args[]) throws Exception
+
+	public static void main(String[] args) throws Exception 
 	{
 		
 		System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
@@ -17,11 +17,9 @@ public class SwitchTo_Frame
 	    driver.manage().window().maximize();
 	    Thread.sleep(2000);
 	    
-	    //switch to frame using FrameID
-	    driver.switchTo().frame("modal_window");
-	    Thread.sleep(3000);
-	    
-	  
+	    //Navigate to frame using url [We can also use get method]
+	    driver.navigate().to("https://www.cleartrip.com/signinstatic/tripidlogin.shtml?popup=no&guest=true");
+	     
 	    WebElement email=driver.findElement(By.xpath("//input[@id='email']"));
 	    email.clear();
 	    email.sendKeys("darshan@123");
@@ -30,18 +28,9 @@ public class SwitchTo_Frame
 	    TripId.clear();
 	    TripId.sendKeys("4646465654");
 	    
-	    //This command bring controls from frame to Webpage
-	    driver.switchTo().defaultContent();
+	    //Navigate back to mainpage from frame
+	    driver.navigate().back();
 	    
-	   WebElement FeedBackLink=driver.findElement(By.xpath("//a[@href='javascript:void(0);'][contains(.,'Feedback')]"));
-	   FeedBackLink.click();
-	   Thread.sleep(5000);
-	   
-	  WebElement FeedBackFrame=driver.findElement(By.xpath("//iframe[@src='https://www.cleartrip.com/supportstatic/mail/index.shtml?srctype=feedback']"));
-	  driver.switchTo().frame(FeedBackFrame);
-	 
-	  //click on Back to home button
-	  driver.findElement(By.xpath("//button[contains(.,'Back to home')]")).click();
 	}
 
 }
