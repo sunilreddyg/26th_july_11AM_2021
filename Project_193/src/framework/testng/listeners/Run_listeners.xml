@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="default listenrs file">
+
+
+	<listeners>
+	<listener class-name="framework.testng.listeners.NewReports"/>
+	</listeners>
+
+	<groups>
+		<run>
+			<include name="smoke"></include>
+		</run>
+	</groups>
+	<test name="testA">
+			<classes>
+				<class name="framework.testng.listeners.SampleTest"></class>
+			</classes>
+	</test>
+</suite>
